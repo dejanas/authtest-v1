@@ -25,5 +25,5 @@
 
 Firebase Realtime Database is used for saving users' feedback.
 
-Quick presentation of application: 
+Quick presentation of project: 
 https://github.com/dejanas/authtest-v1/blob/master/Presentation_AuthTest.pptx
