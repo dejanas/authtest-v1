@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e0e0e0</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#33b5e5</color>
+
+    <color name="backgroundLight">#eceff1</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name = "colorGray">#E0E0E0</color>
+
+    <color name="lapis_lazuli">#3a5898</color>
+    <color name="lapis_lazuli_tint">#4d68a2</color>
+    <color name="snow">#fafafa</color>
+
+</resources>

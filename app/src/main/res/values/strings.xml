@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AuthTest.v1</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="welcome_text">Welcome to AuthTest!</string>
+    <string name="Test">Test</string>
+    <string name="Anketa">Anketa</string>
+    <string name="RezultatiAnkete">Rezultati ankete</string>
+    <string name="Registracija">Registracija</string>
+    <string name="Login">Log in</string>
+    <string name="email">Email</string>
+    <string name="password">Lozinka</string>
+    <string name="confirmPassword">Potvrdite lozinku</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm_password_warning">Potvrdite lozinku!</string>
+    <string name="insert_password_warning">Unesite lozinku!</string>
+    <string name="password_not_match_warning">Lozinke nisu iste!</string>
+    <string name="Verifikacija">Verifikacija</string>
+    <string name="email_insert_warning">Unesite email adresu!</string>
+    <string name="or">ili</string>
+    <string name="insert_phone_number">Unesite broj telefona</string>
+    <string name="Potvrdi">Potvrdi</string>
+    <string name="insert_phone_warning">Unesite broj telefona!</string>
+    <string name="phone_insert_not_valid_warning">Broj telefona nije ispravan.</string>
+    <string name="insert_code">Unesite kod</string>
+
+    <string name="google_request_id_token">533786663247-i8f8bimsc4uc98lurim2turh6a9nd07o.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1712762145691577</string>
+    <string name="proceed_to_login">Pređite na logovanje</string>
+    <string name="proceed_to_questions">Pređite na anketu</string>
+
+    <string name="auth0_client_id">E409ukZOEoYPw7SGJBivpPXFrFz0ubKu</string>
+    <string name="auth0_domain">dejanas.eu.auth0.com</string>
+
+</resources>

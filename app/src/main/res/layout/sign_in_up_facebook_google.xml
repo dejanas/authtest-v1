@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+    <!--<ImageView-->
+        <!--android:id="@+id/googleSignInIV"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:background="@drawable/selector_google"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/google_ico" />-->
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleSignInBtn"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:textAlignment="center" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="20dp"
+        android:layout_height="match_parent" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebookSignInBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:com_facebook_login_text="FB Login"
+        app:com_facebook_logout_text="FB Login"
+        android:layout_marginTop="3dp"
+        android:paddingBottom="6dp"/>
+
+    <!--<ImageView-->
+            <!--android:id="@+id/facebookSignInIV"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@drawable/selector_facebook"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/facebook_ico" />-->
+
+</LinearLayout>

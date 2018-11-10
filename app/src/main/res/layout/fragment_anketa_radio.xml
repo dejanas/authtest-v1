@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ovde stoji pitanje."
+        android:textSize="22sp"
+        android:paddingBottom="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/ocenaRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingTop="35dp"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        >
+
+         <RadioButton
+             android:id="@+id/ocenaRadiobButton1"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:text="1"
+             android:paddingRight="20dp"
+             android:paddingLeft="2dp"
+            />
+
+        <RadioButton
+            android:id="@+id/ocenaRadiobButton2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="2"
+            android:paddingRight="20dp"
+            android:paddingLeft="2dp"
+            />
+
+        <RadioButton
+            android:id="@+id/ocenaRadiobButton3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="3"
+            android:paddingRight="20dp"
+            android:paddingLeft="2dp"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/ocenaRadiobButton4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="4"
+            android:paddingRight="20dp"
+            android:paddingLeft="2dp"
+            />
+        <RadioButton
+            android:id="@+id/ocenaRadiobButton5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:paddingRight="20dp"
+            android:paddingLeft="2dp"
+            />
+
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sledeceBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sledeće"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

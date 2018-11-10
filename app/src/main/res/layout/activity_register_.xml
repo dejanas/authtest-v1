@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/my_toolbar"></include>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        app:tabTextColor="@android:color/white"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorAccent">
+
+        <android.support.design.widget.TabItem
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="1. Registracija"
+            android:tag="reg_tab"
+            />
+
+        <android.support.design.widget.TabItem
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="2. Verifikacija"
+            android:tag="ver_tag"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+</LinearLayout>

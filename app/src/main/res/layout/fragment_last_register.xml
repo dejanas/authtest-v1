@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="67dp"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp">
+
+    <TextView
+        android:id="@+id/successRegisteredTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uspešno ste se registrovali!"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/proceedToLoginTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/proceed_to_login"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>

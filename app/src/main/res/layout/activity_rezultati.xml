@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.etf.ac.bg.rs.sd120456.authtest.RezultatiActivity"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/my_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent"
+        android:layout_margin="5dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/oceneKorisnikaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ocene korisnika:"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/prosek1TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brzina registracije/logovanja:"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_below="@id/oceneKorisnikaTV"/>
+
+        <TextView
+            android:id="@+id/ocena1TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:text=""
+            android:layout_alignBaseline="@+id/prosek1TV"
+            android:layout_alignBottom="@+id/prosek1TV"
+            android:layout_toEndOf="@+id/prosek1TV"
+            android:layout_marginStart="17dp" />
+
+        <TextView
+            android:id="@+id/prosek2TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Praktičnost:"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_below="@id/prosek1TV"/>
+
+        <TextView
+            android:id="@+id/ocena2TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:text=""
+            android:layout_alignBaseline="@+id/prosek2TV"
+            android:layout_alignBottom="@+id/prosek2TV"
+            android:layout_toEndOf="@+id/prosek2TV"
+            android:layout_marginStart="17dp" />
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0sp"
+        android:groupIndicator="@null"
+        android:paddingTop="10dp"
+        android:background="@color/colorGray"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout3">
+
+        <include layout="@layout/footer" />
+    </LinearLayout>
+</RelativeLayout>

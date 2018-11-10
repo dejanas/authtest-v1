@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="45dp"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ver_code_TIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/ver_code_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/insert_code"
+            android:inputType="phone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/verifikujBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorAccent"
+        android:text="@string/Potvrdi" />
+
+    <TextView
+        android:id="@+id/failedTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verifikacija neuspešna."
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/neuspehNazadTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pokušajte ponovo."
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/includeFooter"
+            layout="@layout/footer" />
+    </LinearLayout>
+
+
+</RelativeLayout>

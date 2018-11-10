@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="45dp"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ver_phone_TIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/ver_phone_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/insert_phone_number"
+            android:inputType="phone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:text="*Potrebno je uneti broj telefona sa kojeg vršite \n  registraciju/logovanje.">
+    </TextView>
+
+    <Button
+        android:id="@+id/potvrdiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorAccent"
+        android:text="@string/Potvrdi" />
+
+</LinearLayout>

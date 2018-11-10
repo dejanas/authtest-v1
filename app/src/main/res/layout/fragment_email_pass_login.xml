@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="45dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/log_email_TIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/log_email_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/log_password_TIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            >
+
+            <EditText
+                android:id="@+id/log_password_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="37dp"
+            android:text="@string/Login"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <include android:id="@+id/lineId"
+         layout="@layout/line_or_line"/>
+
+     <android.support.v4.widget.Space
+         android:id="@+id/spaceId"
+         android:layout_below="@id/lineId"
+         android:layout_width="match_parent"
+         android:layout_height="30dp" />
+
+     <LinearLayout
+         android:id="@+id/buttonsLayout"
+         android:layout_below="@id/spaceId"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true">
+
+         <include layout="@layout/sign_in_up_facebook_google" />
+     </LinearLayout>
+
+     <TextView
+         android:id="@+id/loginInfoName"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="32dp"
+         android:text="Logged in as Username with FB/Gmail"
+         android:gravity="center_horizontal"
+         android:layout_below="@+id/buttonsLayout"
+         android:layout_centerHorizontal="true" />
+
+     <TextView
+         android:id="@+id/loginInfoEmail"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/loginInfoName"
+         android:text="somebody@mail.com"
+         android:layout_centerHorizontal="true"/>
+
+     <Button
+         android:id="@+id/logoutBtn"
+         android:layout_height="45dp"
+         android:layout_width="95dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="10dp"
+         android:layout_below="@id/loginInfoEmail"
+         android:text="Log out"
+         />
+
+ </RelativeLayout>
+
+</LinearLayout>
