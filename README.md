@@ -23,9 +23,9 @@
   - Firebase Authentication
   - android.hardware.fingerprint package
 
-*Firebase Realtime Database is used for saving users' feedback.
+Firebase Realtime Database is used for saving users' feedback.
   
 
-
+![alt text](https://raw.githubusercontent.com/dejanas/authtest-v1/master/img1.png)
 
 
