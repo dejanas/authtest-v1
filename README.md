@@ -17,11 +17,13 @@
 # authtest-v2
 2FA with username/password and email verification
   - Firebase Authentication with verification email
+  (https://github.com/dejanas/authtest-v2)
 
 # authtest-v3
 2FA with username/password and fingerprint verification
   - Firebase Authentication
   - android.hardware.fingerprint package
+  (https://github.com/dejanas/authtest-v3)
 
 Firebase Realtime Database is used for saving users' feedback.
 
